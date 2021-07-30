@@ -1,0 +1,1 @@
+INSERT INTO votes (name, status, start, end) VALUES ("test vote", 'CREATED', '2021-07-30 20:58:00')

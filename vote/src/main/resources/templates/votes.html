@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<table>
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Status</th>
+				<th>Start</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="vote : ${votes}">
+				<td th:text=${vote.name}></td>
+				<td th:text=${vote.status}></td>
+				<td th:text=${vote.start}></td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
